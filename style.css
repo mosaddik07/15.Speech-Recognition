@@ -1,0 +1,82 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  background: #ffc600;
+  font-family: cursive;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.words {
+  max-width: 500px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem 1rem 5rem;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#d9eaf3), color-stop(4%, #fff)) 0 4px;
+  background-size: 100% 3rem;
+  position: relative;
+  line-height: 3rem;
+  outline: none;
+}
+
+.words::selection {
+  background: #ffc600;
+  color: black;
+}
+
+p {
+  margin: 0 0 0 1px;
+}
+
+.words::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  top: 0;
+  left: 30px;
+  bottom: 0;
+  border: 1px solid;
+  border-color: transparent #efe4e4;
+}
+
+p::selection {
+  background: #ffc600;
+  color: black;
+}
+
+#bn-button,
+#en-button {
+  height: 35px;
+  width: 95px;
+  border: none;
+  outline: none;
+  background: blueviolet;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/*info: Scroll Bar Design  */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffc600;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #63500c;
+  border-radius: 10px;
+  border: 2px solid #392277;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
